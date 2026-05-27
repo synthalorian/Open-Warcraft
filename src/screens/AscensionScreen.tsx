@@ -4,21 +4,21 @@ import { useTheme } from '../ThemeContext'
 import { Ionicons } from '@expo/vector-icons'
 
 const ASCENSION_TIERS = [
-  { tier: 1, name: 'Apprentice', icon: 'sparkles', desc: 'Begin your journey into the mysteries of Azeroth\'s arcane arts.' },
-  { tier: 2, name: 'Adept', icon: 'flame', desc: 'Your understanding deepens. New spells and abilities unlock.' },
-  { tier: 3, name: 'Warlock', icon: 'skull', desc: 'Mastery over dark powers. Command your minions with deadly precision.' },
-  { tier: 4, name: 'Archmage', icon: 'star', desc: 'Top of the arcane hierarchy. Reality bends to your will.' },
-  { tier: 5, name: 'Ascendant', icon: 'rocket', desc: 'Beyond mortal comprehension. You shape the flow of magic itself.' },
-  { tier: 6, name: 'Transcendent', icon: 'planet', desc: 'One with the cosmos. The boundaries of reality dissolve.' },
+  { tier: 1, name: 'Season 1', icon: 'sparkles', desc: 'The beginning of ascension. Vanilla era content unlocked.' },
+  { tier: 2, name: 'Season 2', icon: 'flame', desc: 'Explore the expanding world of Azeroth.' },
+  { tier: 3, name: 'Season 3', icon: 'skull', desc: 'The Scourge invasion begins.' },
+  { tier: 4, name: 'Season 4', icon: 'star', desc: 'Outland opens its doors.' },
+  { tier: 5, name: 'Season 5', icon: 'rocket', desc: 'The path to Northrend awaits.' },
+  { tier: 6, name: 'Season 6', icon: 'planet', desc: 'The Lich King awaits. Ascension complete.' },
 ]
 
 const LESSONS = [
-  { id: 1, title: 'Arcane Foundations', desc: 'Understanding the fundamental forces of magic', xp: 100, locked: false, icon: 'sparkles-outline' },
-  { id: 2, title: 'Elemental Convergence', desc: 'Channeling fire, frost, and wind into unified power', xp: 150, locked: false, icon: 'flame-outline' },
-  { id: 3, title: 'Necromantic Arts', desc: 'The forbidden practice of commanding the dead', xp: 200, locked: true, icon: 'skull-outline' },
-  { id: 4, title: 'Temporal Flux', desc: 'Bending time itself — only for the most gifted', xp: 300, locked: true, icon: 'time-outline' },
-  { id: 5, title: 'Cosmic Resonance', desc: 'Aligning with the stars to unleash devastating power', xp: 500, locked: true, icon: 'star-outline' },
-  { id: 6, title: 'Void Mastery', desc: 'Embracing the void — dangerous, alluring, transformative', xp: 750, locked: true, icon: 'planet-outline' },
+  { id: 1, title: 'Class Roles', desc: 'Tank, DPS, Healer — know your part', xp: 100, locked: false, icon: 'sparkles-outline' },
+  { id: 2, title: 'World Quests', desc: 'Explore Azeroth and discover hidden content', xp: 150, locked: false, icon: 'flame-outline' },
+  { id: 3, title: 'Instance Dungeons', desc: 'Master the art of group content', xp: 200, locked: true, icon: 'skull-outline' },
+  { id: 4, title: 'World Bosses', desc: 'Join thousands in epic battles', xp: 300, locked: true, icon: 'time-outline' },
+  { id: 5, title: 'PvP Arenas', desc: 'Prove yourself in combat', xp: 500, locked: true, icon: 'star-outline' },
+  { id: 6, title: 'Raid Content', desc: 'The ultimate test of skill and coordination', xp: 750, locked: true, icon: 'planet-outline' },
 ]
 
 const ION_MAP: Record<string, string> = {
@@ -38,14 +38,14 @@ export const AscensionScreen = ({ navigation }: any) => {
       {/* Header */}
       <View style={styles.header}>
         <Text style={[styles.headerTitle, { color: theme.accent }]}>⚔️ Ascension</Text>
-        <Text style={[styles.headerSub, { color: theme.textSecondary }]}>Your path to mastery</Text>
+        <Text style={[styles.headerSub, { color: theme.textSecondary }]}>Inspired by ascension.gg</Text>
       </View>
 
       <ScrollView style={{ flex: 1 }}>
         {/* XP Bar */}
         <View style={[styles.xpBar, { backgroundColor: theme.cardBg, borderColor: theme.border, marginHorizontal: 16, padding: 16, borderRadius: 12, borderWidth: 1, marginBottom: 16 }]}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-            <Text style={[styles.xpLabel, { color: theme.text }]}>Level 12 — Apprentice</Text>
+            <Text style={[styles.xpLabel, { color: theme.text }]}>Level 12 — Season 1</Text>
             <Text style={[styles.xpAmount, { color: theme.accent }]}>2,450 / 5,000 XP</Text>
           </View>
           <View style={[styles.xpTrack, { backgroundColor: theme.bgTertiary, height: 8, borderRadius: 4, overflow: 'hidden' }]}>
