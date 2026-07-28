@@ -71,7 +71,7 @@ export const MoreScreen = ({ navigation }: any) => {
           <Text style={[styles.menuText, { color: theme.text }]}>Change Theme</Text>
           <TouchableOpacity onPress={() => navigation?.navigate('ThemePicker')}>
             <View style={[styles.themeBadge, { backgroundColor: '#58a6ff' }]}>
-              <Text style={{ color: '#fff', fontSize: 11, fontWeight: '700' }}>{theme.name || themeKey}</Text>
+              <Text style={{ color: '#fff', fontSize: 11, fontWeight: '700' }}>{themeKey}</Text>
             </View>
           </TouchableOpacity>
         </View>

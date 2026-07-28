@@ -25,3 +25,7 @@ tsconfig.tsbuildinfo
 *.log
 .env
 .DS_Store
+
+# Release binaries
+*.apk
+*.aab

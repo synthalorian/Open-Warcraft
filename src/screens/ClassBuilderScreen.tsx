@@ -161,10 +161,10 @@ export const ClassBuilderScreen = ({ navigation }: any) => {
       {/* Gear Slots */}
       <View style={{ paddingHorizontal: 16, marginBottom: 12 }}>
         <TouchableOpacity onPress={() => setShowGear(true)}>
-          <Text style={[styles.sectionTitle, { color: theme.text }]}>Gear Loadout ({Object.keys(gear).length}/{gearSlots.length})</Text>
+          <Text style={[styles.sectionTitle, { color: theme.text }]}>Gear Loadout ({Object.keys(gear).length}/{GEAR_SLOTS.length})</Text>
         </TouchableOpacity>
         <View style={styles.gearGrid}>
-          {gearSlots.map(slot => {
+          {GEAR_SLOTS.map(({ slot }) => {
             const item = gear[slot]
             return (
               <TouchableOpacity
@@ -318,7 +318,7 @@ export const ClassBuilderScreen = ({ navigation }: any) => {
   )
 }
 
-const styles = {
+const styles = StyleSheet.create({
   header: { padding: 20 },
   headerTitle: { fontSize: 28, fontWeight: '700', letterSpacing: 1 },
   headerSub: { fontSize: 14, marginTop: 4 },
@@ -334,4 +334,4 @@ const styles = {
   utilChip: { paddingHorizontal: 8, paddingVertical: 4, borderRadius: 4, borderWidth: 1, marginBottom: 4, marginRight: 4 },
   modalOverlay: { flex: 1, backgroundColor: 'rgba(0,0,0,0.7)', justifyContent: 'center', alignItems: 'center' },
   modalContent: { width: '80%', borderRadius: 16, borderWidth: 1, padding: 16, maxHeight: '80%', overflow: 'hidden' },
-}
+})
