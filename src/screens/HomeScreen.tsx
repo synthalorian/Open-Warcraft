@@ -43,7 +43,7 @@ export const HomeScreen = ({ navigation }: any) => {
                 else navigation?.navigate(link.route)
               }}
             >
-              <Ionicons name={link.icon + '-outline'} size={28} color={link.color} />
+              <Ionicons name={(link.icon + '-outline') as React.ComponentProps<typeof Ionicons>['name']} size={28} color={link.color} />
               <Text style={[styles.quickText, { color: theme.text }]}>{link.title}</Text>
             </TouchableOpacity>
           ))}
@@ -70,7 +70,7 @@ export const HomeScreen = ({ navigation }: any) => {
             key={i}
             style={[styles.activityItem, { backgroundColor: theme.cardBg, borderColor: theme.border, borderBottomWidth: i < recentActivity.length - 1 ? 1 : 0 }]}
           >
-            <Ionicons name={activity.icon + '-outline'} size={18} color={theme.accent} />
+            <Ionicons name={(activity.icon + '-outline') as React.ComponentProps<typeof Ionicons>['name']} size={18} color={theme.accent} />
             <View style={{ flex: 1, marginLeft: 12 }}>
               <Text style={{ color: theme.text, fontSize: 14 }}>{activity.text}</Text>
               <Text style={{ color: theme.textMuted, fontSize: 12, marginTop: 2 }}>{activity.time}</Text>

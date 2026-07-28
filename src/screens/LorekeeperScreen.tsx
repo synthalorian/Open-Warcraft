@@ -171,7 +171,7 @@ export const LorekeeperScreen = ({ navigation }: any) => {
   )
 }
 
-const styles = {
+const styles = StyleSheet.create({
   header: { padding: 20 },
   headerTitle: { fontSize: 28, fontWeight: '700', letterSpacing: 1 },
   headerSub: { fontSize: 14, marginTop: 4 },
@@ -189,4 +189,4 @@ const styles = {
   timelineTitle: { textTransform: 'uppercase', letterSpacing: 1 },
   timelineDot: { width: 6, height: 6, borderRadius: 3, marginRight: 8 },
   timelineYear: { fontSize: 11, fontWeight: '700', marginRight: 6 },
-}
+})

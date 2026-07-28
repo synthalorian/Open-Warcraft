@@ -22,7 +22,7 @@ const ION_MAP: Record<string, string> = {
 }
 
 const TabIcon: React.FC<{ routeName: string; color: string; size: number }> = ({ routeName, color, size }) => {
-  const map: Record<string, string> = {
+  const map: Record<string, React.ComponentProps<typeof Ionicons>["name"]> = {
     home: 'home-outline',
     lore: 'document-text-outline',
     build: 'construct-outline',
