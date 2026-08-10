@@ -59,6 +59,7 @@ src/
 
 ## Release Notes
 
+- **v1.2.0** — Data persistence: AsyncStorage for journal entries, custom builds, warband roster, ascension progress. Journal screen now fully functional with add/edit/delete/complete. TypeScript config fixed for modern Expo.
 - **v1.1.1** — TypeScript hardening: `tsc --noEmit` clean (39 → 0 errors); fixed gear-slot crash in Class Builder (broken `gearSlots` reference + object/string shape mismatch); `StyleSheet.create` constraints added; dead `theme.name` fallback removed; 70MB APK untracked from git (`.apk`/`.aab` gitignored); `npm run typecheck` added.
 - **v1.1.0** — Feature release.
 - **v1.0.0** — Initial release.
