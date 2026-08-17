@@ -70,7 +70,7 @@ Apache-2.0 — see [LICENSE](LICENSE)
 
 Not affiliated with Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.
 
-Made by synth with synthclaw
+Made by synthalorian 🎹🤺 with synthclaw
 
 ---
 
