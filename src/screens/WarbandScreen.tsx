@@ -14,7 +14,7 @@ export const WarbandScreen = ({ navigation }: any) => {
   ]
 
   const guildMembers = [
-    { name: 'Synthalorian', class: 'Warrior', online: true, rank: 'Officer' },
+    { name: 'Synth', class: 'Warrior', online: true, rank: 'Officer' },
     { name: 'Alfred', class: 'Mage', online: true, rank: 'Guild Master' },
     { name: 'Skully', class: 'Druid', online: false, rank: 'Member' },
     { name: 'NeonKnight', class: 'Paladin', online: true, rank: 'Member' },
