@@ -1,3 +1,5 @@
+![Open-Warcraft](.github/preview.png)
+
 # ⚔️ Open Warcraft
 
 An open-source World of Warcraft companion app. Class builder, warband tracker, lore journal, and ascension planning — built with React Native + Expo.
