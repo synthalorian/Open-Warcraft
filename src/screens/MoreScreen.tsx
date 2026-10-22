@@ -84,7 +84,7 @@ export const MoreScreen = ({ navigation }: any) => {
           Open Warcraft is an open-source companion app for World of Warcraft players. It provides lore exploration, class building, journal tracking, and PvP management tools.
         </Text>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 12 }}>
-          <Text style={{ color: theme.textMuted, fontSize: 12 }}>Licensed under MIT</Text>
+          <Text style={{ color: theme.textMuted, fontSize: 12 }}>Licensed under Apache-2.0</Text>
           <Text style={{ color: theme.textMuted, fontSize: 12 }}>Built with React Native + Expo</Text>
         </View>
       </View>
